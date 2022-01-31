@@ -10,7 +10,9 @@ while (flag)
         "4.Reverse Number\n"+
         "5.Vending Machine\n"+
         "6.Day Of Week\n"+
-        "7.Exit");
+        "7.Temperature Conversion\n"+
+        "8.Monthly Payment\n"+
+        "9.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -67,6 +69,9 @@ while (flag)
             TempConversion.TemperatureConversion();
             break;
         case 8:
+            Payment.MonthlyPayment(10000, 10, 24);
+            break;
+        case 9:
             flag = false;
             break;
     }
