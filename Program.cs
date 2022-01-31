@@ -6,7 +6,8 @@ while (flag)
 {
     Console.WriteLine("Enter Value:\n1.Fibonacci Series\n" +
         "2.Perfect Number\n"+
-        "3.Exit");
+        "3.Prime Number\n"+
+        "4.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -19,6 +20,10 @@ while (flag)
             perfect.Perfect();
             break;
         case 3:
+            PrimeNumber prime = new PrimeNumber();
+            prime.PrimeCheck();
+            break;
+        case 4:
             flag = false;
             break;
     }
