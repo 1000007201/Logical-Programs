@@ -8,7 +8,8 @@ while (flag)
         "2.Perfect Number\n"+
         "3.Prime Number\n"+
         "4.Reverse Number\n"+
-        "5.Exit");
+        "5.Vending Machine\n"+
+        "6.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -29,6 +30,10 @@ while (flag)
             reverse.Reverse();
             break;
         case 5:
+            VendingMachine note = new VendingMachine();
+            note.NoteCounter();
+            break;
+        case 6:
             flag = false;
             break;
     }
