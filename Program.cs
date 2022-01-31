@@ -7,7 +7,8 @@ while (flag)
     Console.WriteLine("Enter Value:\n1.Fibonacci Series\n" +
         "2.Perfect Number\n"+
         "3.Prime Number\n"+
-        "4.Exit");
+        "4.Reverse Number\n"+
+        "5.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -24,6 +25,10 @@ while (flag)
             prime.PrimeCheck();
             break;
         case 4:
+            ReverseNumber reverse = new ReverseNumber();
+            reverse.Reverse();
+            break;
+        case 5:
             flag = false;
             break;
     }
