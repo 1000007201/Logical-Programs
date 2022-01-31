@@ -10,7 +10,8 @@ while (flag)
         "4.Reverse Number\n"+
         "5.Vending Machine\n"+
         "6.Day Of Week\n"+
-        "7.Exit");
+        "7.Temperatue Conversion"+
+        "8.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
