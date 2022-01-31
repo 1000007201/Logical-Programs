@@ -64,6 +64,9 @@ while (flag)
 
             break;
         case 7:
+            TempConversion.TemperatureConversion();
+            break;
+        case 8:
             flag = false;
             break;
     }
