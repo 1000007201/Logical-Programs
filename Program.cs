@@ -13,7 +13,8 @@ while (flag)
         "7.Temperature Conversion\n"+
         "8.Monthly Payment\n"+
         "9.StopWatch\n"+
-        "10.Exit");
+        "10.Square Root\n"+
+        "11.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -77,11 +78,16 @@ while (flag)
             stopTimer.Timer();
             break;
         case 10:
+            SquareRoot squareroot = new SquareRoot();
+            squareroot.Root();
+            break;
+        case 11:
             flag = false;
             break;
     }
 
 }
+
 
 
 
