@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using FunctionalProgram;
 
+
 bool flag = true;
 while (flag)
 {
@@ -14,7 +15,8 @@ while (flag)
         "8.Monthly Payment\n"+
         "9.StopWatch\n"+
         "10.Square Root\n"+
-        "11.Exit");
+        "11.Decimal To Binary"+
+        "12.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -82,11 +84,19 @@ while (flag)
             squareroot.Root();
             break;
         case 11:
+            DecimalToBinary decimalToBinary = new DecimalToBinary();
+            decimalToBinary.Binary();
+            break;
+        case 12:
             flag = false;
             break;
     }
 
 }
+
+
+
+
 
 
 
