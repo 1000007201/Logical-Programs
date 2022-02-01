@@ -12,7 +12,8 @@ while (flag)
         "6.Day Of Week\n"+
         "7.Temperature Conversion\n"+
         "8.Monthly Payment\n"+
-        "9.Exit");
+        "9.StopWatch\n"+
+        "10.Exit");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -72,9 +73,15 @@ while (flag)
             Payment.MonthlyPayment(10000, 10, 24);
             break;
         case 9:
+            StopTimer stopTimer = new StopTimer();
+            stopTimer.Timer();
+            break;
+        case 10:
             flag = false;
             break;
     }
 
 }
+
+
 
